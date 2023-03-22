@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="form">
+            <h1>SIMPLE CAL.</h1>
+            <input type="number" id="num1">
+            <div class="btn">
+                <button id="multiplyBtn" value="*" onclick="setOperator(this.id)">*</button>
+                <button id="divideBtn" value="/" onclick="setOperator(this.id)">/</button>
+                <button id="addBtn" value="+" onclick="setOperator(this.id)">+</button>
+                <button id="subtractBtn" value="-" onclick="setOperator(this.id)">-</button>
+            </div>
+            <input type="number" id="num2">
+            <button class="btn1" id="result" value="=" onclick="res()">CALCULATE</button>
+            <button class="btn1" id="clear" onclick="cls()">CLEAR</button>
+            <p>Result Will be Shown Below </p>
+            <p id="finres"></p>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
