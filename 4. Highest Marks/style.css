@@ -1,0 +1,120 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    gap: 25px;
+    background-color: #10131f;
+}
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.inp input {
+    width: 20rem;
+    padding: 10px;
+    font-size: 20px;
+    /* border: none;zx */
+    outline: none;
+    letter-spacing: 1px;
+    font-weight: 500;
+    border: #D43436 solid 2px;
+    background-color: transparent;
+    color: #07d8a1;
+    border-radius: 5px;
+    transition: all 0.5s;
+}
+
+
+.inp {
+    position: relative;
+}
+
+.inp label {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: #999;
+    transition: all 0.2s;
+    pointer-events: none;
+}
+
+.inp input:focus~label,
+.inp input:not(:placeholder-shown)~label {
+    top: 0px;
+    background-color: #10131f;
+    padding: 0px 5px;
+    font-size: 1rem;
+    left: 0.5rem;
+    color: #fa6464;
+    letter-spacing: 1px;
+    font-weight: 500;
+    border-left: 2px solid #D93E3E;
+    border-right: 2px solid #D93E3E;
+    /* text-transform: uppercase; */
+}
+
+.btn {
+    display: flex;
+    gap: 15px;
+}
+
+.btn button {
+
+    border-radius: 7px;
+    width: 165px;
+    font-size: 20px;
+    letter-spacing: 1.2px;
+    padding: 8px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn button:first-child {
+    border: 2px solid #429A61;
+    background-color: #429A61;
+    color: #fff;
+    transition: all 0.5s ease-out;
+}
+
+.btn button:first-child:hover {
+    border: 2px solid #429A61;
+    background-color: #fff;
+    color: #429A61;
+    box-shadow: 3px 3px 8px #429A61;
+}
+
+.btn button:last-child {
+    border: 2px solid #D43436;
+    background-color: #D93E3E;
+    color: #fff;
+    transition: all 0.5s ease-out;
+}
+
+.btn button:last-child:hover {
+    border: 2px solid #D43436;
+    background-color: #fff;
+    color: #D43436;
+    box-shadow: 3px 3px 8px #D43436;
+}
+
+.result input {
+    border: 2px solid #07d8a1;
+    font-weight: 600;
+}
