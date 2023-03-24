@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="main">
+
+        <div class="dish-main top-main">
+            <input type="number" id="noOfPeople" placeholder=" ">
+            <label for="">No. Of People</label>
+        </div>
+        <div class="dish-main">
+            <input type="number" id="dish1" placeholder=" ">
+            <label for="">Dish 1</label>
+        </div>
+        <div class="dish-main">
+            <input type="number" id="dish2" placeholder=" ">
+            <label for="">Dish 2</label>
+        </div>
+        <div class="dish-main">
+            <input type="number" id="dish3" placeholder=" ">
+            <label for="">Dish 3</label>
+        </div>
+        <div class="dish-main">
+            <input type="number" id="dish4" placeholder=" ">
+            <label for="">Dish 4</label>
+        </div>
+        <div class="btn">
+            <button id="sub" onclick="sub()">submit</button>
+            <button id="cls" onclick="cls()">Clear</button>
+        </div>
+
+        <p>Total Bill...</p>
+
+        <div class="dish-main result-main">
+            <input type="text" id="resTotal" disabled placeholder=" ">
+            <label for="">Total Bill</label>
+        </div>
+        <div class="dish-main result-main">
+            <input type="text" id="resSplit" disabled placeholder=" ">
+            <label for="">Bill to be paid by Each Person</label>
+        </div>
+        <!-- <p id="resTotal">hye</p>
+        <p id="resSplit">Hello</p> -->
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
