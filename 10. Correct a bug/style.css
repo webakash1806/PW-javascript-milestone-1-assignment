@@ -1,0 +1,132 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    background-color: #1c1e26;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+h1 {
+    color: #00d9ff;
+    letter-spacing: 1px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.dish-main {
+    position: relative;
+}
+
+.dish-main input {
+    width: 20rem;
+    padding: 5px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    border: 2px solid #00d9ff;
+    border-radius: 5px;
+    outline: none;
+    background-color: transparent;
+    transition: all 0.3s;
+    color: #fff;
+}
+
+.dish-main label {
+    position: absolute;
+    left: 0;
+    top: 25%;
+    color: #00d9ff;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    /* border-left: #00d9ff 2px solid;
+    border-right: #00d9ff 2px solid; */
+    padding: 0 7px;
+    transition: all 0.3s;
+    pointer-events: none;
+}
+
+.dish-main input:focus~label,
+.dish-main input:not(:placeholder-shown)~label {
+    transform: translateY(-100%);
+    left: 10px;
+    font-size: 17px;
+    background-color: #1c1e26;
+    padding: 0 4px;
+    /* border-radius: 5px; */
+
+}
+
+.btn {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.btn button {
+    width: 48%;
+    padding: 8px 5px;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+#sub {
+    color: green;
+    border: none;
+    box-shadow: 2px 2px 10px green;
+
+
+}
+
+#cls {
+    color: rgb(128, 0, 0);
+    border: none;
+    box-shadow: 2px 2px 10px rgb(243, 3, 3);
+}
+
+#sub:hover {
+    box-shadow: -4px -4px 15px green;
+}
+
+#cls:hover {
+    box-shadow: 4px -4px 15px rgb(243, 3, 3);
+}
+
+
+p {
+    color: #ff97c2;
+    font-size: 30px;
+    letter-spacing: 1.5px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.result-main {
+    color: #aaff00;
+    font-size: 20px;
+    text-align: center;
+}
