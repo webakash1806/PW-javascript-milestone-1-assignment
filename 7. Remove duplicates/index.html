@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <h1>REMOVE DUPLICATES</h1>
+    <div class="main">
+        <div class="pro-main">
+            <label for="">Select Products</label>
+            <div class="main-pro">
+                <button id="shirt" onclick="shirt()" value="shirt">Shirt</button>
+                <button id="jeans" onclick="jeans()" value="jeans">jeans</button>
+                <button id="tShirt" onclick="tshirt()" value="T-Shirt">T-Shirt</button>
+                <button id="SweatShirt" onclick="sweatshirt()" value="SweatShirt">SweatShirt</button>
+            </div>
+        </div>
+        <div class="btn-main">
+            <button id="submit" onclick="removeDuplicates(cart)">See the products available in Carts</button>
+            <button id="cls" onclick="cls()">Clear the Carts</button>
+        </div>
+
+        <div class="inp-main">
+            <label for="">Cart with Duplicacy</label>
+            <input type="text" disabled id="duplicacy">
+        </div>
+        <div class="inp-main">
+            <label for="">Cart without Duplicacy</label>
+            <input type="ar" disabled id="withoutDuplicacy">
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
