@@ -1,0 +1,48 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+
+
+img {
+    position: absolute;
+    height: 250px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transition: all 1s;
+}
+
+button {
+    position: absolute;
+    cursor: pointer;
+    padding: 5px;
+    font-size: 30px;
+}
+
+#up {
+    top: 0;
+    left: 50vw;
+}
+
+#down {
+    bottom: 0;
+    left: 50vw;
+}
+
+#left {
+    top: 50vh;
+    left: 0;
+}
+
+#right {
+
+    top: 50vh;
+    right: 0;
+}
