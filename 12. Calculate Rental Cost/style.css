@@ -1,0 +1,148 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background-color: #93D0D6;
+    padding: 20px;
+    border-radius: 5px;
+
+}
+
+.inp-main {
+    position: relative;
+    /* margin-top: -30px; */
+}
+
+.inp-main input {
+    font-size: 20px;
+    padding: 5px;
+    letter-spacing: 2px;
+    border: 2px solid red;
+    width: 95%;
+    outline: none;
+    background-color: transparent;
+    border-radius: 5px;
+}
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+
+.inp-main label {
+    font-size: 17px;
+    position: absolute;
+    left: 0;
+    top: 10%;
+    padding: 5px 10px;
+    transition: all 0.3s;
+    pointer-events: none;
+
+}
+
+.inp-main input:focus~label,
+.inp-main input:not(:placeholder-shown)~label {
+    transform: translateY(-70%);
+    left: 4px;
+    background-color: #93D0D6;
+    padding: 0 3px;
+}
+
+h2 {
+    margin-bottom: -15px;
+    border-bottom: 1.5px solid #000;
+    width: fit-content;
+}
+
+
+.radio-main {
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: -15px;
+}
+
+.radio-main input {
+    width: 15px;
+    height: 15px;
+}
+
+.button {
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-around;
+    gap: 8px;
+}
+
+.btn {
+    width: 45%;
+    padding: 5px;
+    font-size: 19px;
+    border: none;
+    border-radius: 3px;
+    border-radius: 5px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+
+}
+
+#sub {
+    color: green;
+}
+
+#res {
+    color: #ff0000;
+}
+
+
+
+.res-main {
+    position: relative;
+}
+
+.res-main input {
+    width: 93%;
+    padding: 7px;
+    font-size: 23px;
+    font-weight: 600;
+    border: 2px solid green;
+    background-color: transparent;
+    border-radius: 5px;
+    color: #000;
+}
+
+.res-main label {
+    font-size: 17px;
+    position: absolute;
+    left: 10px;
+    top: 15%;
+    padding: 5px;
+    transition: all 0.3s;
+    background-color: #93D0D6;
+    pointer-events: none;
+}
+
+.res-main input:focus~label,
+.res-main input:not(:placeholder-shown)~label {
+    transform: translateY(-80%);
+    left: 30%;
+    padding: 0 4px;
+}

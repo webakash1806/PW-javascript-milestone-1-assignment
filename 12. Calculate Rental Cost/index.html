@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="main">
+        <h1>Rental Cost Calculator</h1>
+        <div class="inp-main">
+            <input type="number" id="day" placeholder=" ">
+            <label for="">No. of Days</label>
+        </div>
+        <h2>Select Car Type:</h2>
+        <div class="radio-main">
+            <input type="radio" name="cartype" id="carType1" value="1">
+            <label for="">Economy</label>
+        </div>
+        <div class="radio-main">
+            <input type="radio" name="cartype" id="carType2" value="2">
+            <label for="">Mid Size</label>
+        </div>
+        <div class="radio-main">
+            <input type="radio" name="cartype" id="carType3" value="3">
+            <label for="">Luxury</label>
+        </div>
+        <div class="button">
+            <button id="sub" onclick="finSub()" class="btn">Submit</button>
+            <button id="res" onclick="res()" class="btn">Reset</button>
+        </div>
+
+        <div class="res-main">
+            <input type="text" id="result" disabled placeholder=" ">
+            <label for="">Final Rental Cost</label>
+        </div>
+    </div>
+    <!-- <p id="result">hye
+    </p> -->
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
