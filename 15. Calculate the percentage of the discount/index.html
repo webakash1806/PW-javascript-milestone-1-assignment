@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="main">
+
+        <h1>Discount Calculator</h1>
+
+        <div class="price-main">
+            <label for="">Enter Price</label>
+            <input type="number" id="price" placeholder=" ">
+
+        </div>
+        <div class="price-main">
+            <label for="">Enter Discount %</label>
+            <input type="number" id="disPer" placeholder=" ">
+
+        </div>
+
+        <div class="btn">
+            <button id="sub" onclick="sub()">Submit</button>
+            <button id="cls" onclick="cls()">Clear</button>
+        </div>
+
+        <p id="finalPrice">Final Price : </p>
+        <p id="savingPrice">Total Savings : </p>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
