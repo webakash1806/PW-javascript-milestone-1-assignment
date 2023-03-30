@@ -7,7 +7,7 @@ function res() {
 
     if (inp1 && inp2 && inp3 && inp4 && inp5) {
         let allMarks = [inp1, inp2, inp3, inp4, inp5];
-        if (inp1 <= 1000 && inp2 <= 1000 && inp3 <= 1000 && inp4 <= 1000 && inp5 <= 1000) {
+        if (inp1 <= 10000 && inp2 <= 10000 && inp3 <= 10000 && inp4 <= 1000 && inp5 <= 1000) {
             // console.log(allMarks)
             let largest = allMarks[0];
             for (let i = 1; i < allMarks.length; i++) {
@@ -20,7 +20,7 @@ function res() {
             finalResult.value = largest
         }
         else {
-            alert("Input Below 10 digit")
+            alert("Input Below 10000")
         }
     }
     else {

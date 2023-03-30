@@ -13,20 +13,22 @@ function btn() {
 
 
 
-    if ((pas.length != 0) & (confirm.length != 0)) {
+    if ((pas.length != 0) & (confirm.length != 0) & (pas.length > 8) & (confirm.length > 8)) {
         if (pas == confirm) {
             msg.textContent = "Password Matched"
+            alert("Password Matched")
             msg.style.color = "1A8F14"
             console.log("Password Matched. Password Validation Successfull")
         }
         else {
             msg.textContent = "Password Not Matched"
+            alert("Password Not Matched")
             msg.style.color = "E41D1D"
             console.log("Password Not Matched. Password Validation Unsuccessfull")
         }
     }
     else {
         msg.textContent = ""
-        alert("It should not be empty")
+        alert("Password should be greater than 8 digits")
     }
 }

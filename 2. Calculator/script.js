@@ -13,7 +13,7 @@ function cls() {
 
 document.getElementById("multiplyBtn").innerHTML = "X"
 document.getElementById("divideBtn").innerHTML = "÷"
-document.getElementById("subtractBtn").innerHTML = "_"
+document.getElementById("subtractBtn").innerHTML = "-"
 
 function res() {
     let first = document.getElementById("num1").value;
