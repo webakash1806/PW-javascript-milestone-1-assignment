@@ -1,0 +1,82 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main {
+    background-color: #eed8d8;
+    padding: 50px 20px 20px 20px;
+    border-radius: 8px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: end;
+}
+
+h2 {
+    font-size: 20px;
+    position: absolute;
+    top: 27px;
+    left: 210px;
+}
+
+.qua {
+    position: absolute;
+    left: 365px;
+}
+
+.inp {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 15px;
+}
+
+label {
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    font-size: 18px;
+}
+
+input {
+    padding: 5px;
+    border: 2px solid #000;
+    border-radius: 5px;
+    outline: none;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+    width: 10rem;
+}
+
+button {
+    width: 10.8rem;
+    padding: 5px;
+    font-size: 19px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+p {
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-right: 10rem;
+    margin-top: 30px;
+}
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
