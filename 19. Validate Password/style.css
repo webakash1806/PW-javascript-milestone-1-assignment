@@ -1,0 +1,124 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+body {
+    background: url(./pexels-oleksandr-tiupa-192136.jpg) no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: #e00e0e; */
+}
+
+.main {
+    box-shadow: 5px 5px 20px #03f92c47, -5px -5px 20px #019e1b4d;
+    background-color: #06060634;
+    backdrop-filter: blur(5px);
+    color: #f5f6f8;
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+
+h1 {
+    font-weight: 500;
+    letter-spacing: 3.5px;
+    font-size: 40px;
+    /* text-decoration: underline; */
+}
+
+.inp-main {
+    position: relative;
+}
+
+.inp-main input {
+    border: 2px solid #f5f6f8;
+    border-radius: 5px;
+    outline: none;
+    background-color: transparent;
+    padding: 5px;
+    width: 19rem;
+    font-size: 18px;
+    color: #f5f6f8;
+    letter-spacing: 1px;
+}
+
+.inp-main label {
+    position: absolute;
+    left: 9px;
+    top: 7px;
+    font-size: 19px;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    transition: all 0.3s;
+    pointer-events: none;
+}
+
+
+.inp-main input:focus~label,
+.inp-main input:not(:placeholder-shown)~label {
+    top: -13px;
+    left: 8px;
+    padding: 0px 5px;
+    font-size: 16px;
+    background-color: #1d1d1d;
+    border-radius: 5px;
+
+}
+
+p {
+    background-color: #fff;
+    padding: 0 10px;
+    border-radius: 3px;
+    text-transform: capitalize;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    font-size: 16.5px;
+}
+
+.btn {
+    display: flex;
+    gap: 15px;
+    /* width: 100; */
+}
+
+button {
+    width: 145px;
+    border-radius: 5px;
+    padding: 2px 5px;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: all 0.5s;
+}
+
+button:first-child {
+    color: green;
+}
+
+button:first-child:hover {
+    background-color: green;
+    color: #fff;
+}
+
+button:last-child {
+    color: red;
+}
+
+button:last-child:hover {
+    background-color: red;
+    color: #fff;
+}
