@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
@@ -26,7 +27,58 @@ main {
     padding: 20px 50px;
 }
 
-div {
+main>div {
     border-radius: 5px;
     box-shadow: 1px 1px 10px #000000bd;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+.github-link i {
+    font-size: 20.5px;
+    color: #000000;
+    transition: all 0.8s;
+    padding: 6px 6.4px;
+    box-shadow: 1px 1px 10px #000000bd;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+    width: fit-content;
+}
+
+.github-link i:hover {
+    color: #fff;
+    background-color: #000000;
+
+}
+
+.live-link {
+    background-color: #000;
+    border-radius: 25px;
+    padding: 2px 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    gap: 12px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.live-link i {
+    font-size: 11px;
+}
+
+.link-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
 }
