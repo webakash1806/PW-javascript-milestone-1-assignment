@@ -189,7 +189,7 @@ textarea:not(:placeholder-shown)~label {
 
 
 
-.btn-done  {
+.btn-done {
     width: fit-content;
     position: absolute;
     top: 3px;
@@ -200,6 +200,37 @@ textarea:not(:placeholder-shown)~label {
     cursor: pointer;
 }
 
+
+.popup {
+    color: #8500c3;
+    background-color: #ffffff;
+    border-radius: 5px 5px 10px #808080;
+}
+
+
+
+
+
+@media (max-width:720px) {
+
+    .main-input {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .main-flex textarea {
+        width: 25rem;
+    }
+
+    #res {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+}
 
 @media (max-width:420px) {
     .main-input {
